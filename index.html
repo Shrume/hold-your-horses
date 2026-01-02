@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hold Your Horses</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y76ZYHP2FY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y76ZYHP2FY');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Matches the vertical gap from your design (~20px) */
+            gap: 20px; 
+            width: 100%;
+            max-width: 800px;
+            padding: 0 20px;
+            box-sizing: border-box; 
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* UPDATED: Matches the 16.7px gap from Figma relative to font size */
+            gap: 0.80em; 
+            
+            flex-wrap: nowrap;
+            white-space: nowrap; 
+        }
+
+        .text-main {
+            color: #FFF;
+            font-weight: 700;
+            line-height: 1;
+            font-size: clamp(24px, 6vw, 60.217px);
+        }
+
+        .badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #F7971D;
+            color: #000;
+            font-weight: 700;
+            line-height: 1;
+            
+            /* Inherit font size */
+            font-size: clamp(24px, 6vw, 60.217px);
+
+            /* UPDATED PADDING: 
+               - Top/Bottom: ~6.7px (0.11em) 
+               - Left/Right: ~16.7px (0.28em) -> Matches the wider look in image
+            */
+            padding: 0.11em 0.10em;
+            
+            /* Matches the 20px radius relative to font size */
+            border-radius: 0.15em; 
+        }
+
+        .subtitle {
+            color: #ADADAD;
+            text-align: center;
+            font-weight: 500;
+            font-size: clamp(14px, 3vw, 20px);
+            line-height: 1.4;
+            max-width: 90%;
+        }
+
+        .mobile-break {
+            display: inline; 
+        }
+
+        @media (max-width: 600px) {
+            .mobile-break {
+                display: block; 
+                margin-top: 4px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="title-row">
+            <span class="text-main">Hold Your</span>
+            <div class="badge">Horses</div>
+        </div>
+
+        <div class="subtitle">
+            You mistyped the URL. <span class="mobile-break">Easy there.</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
